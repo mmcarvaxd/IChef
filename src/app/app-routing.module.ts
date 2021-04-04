@@ -9,6 +9,10 @@ const routes: Routes = [
   {
     path: 'recipe-ingredients',
     loadChildren: () => import('./pages/recipe-ingredients/recipe-ingredients.module').then( m => m.RecipeIngredientsPageModule)
+  },
+  {
+    path: 'drink-ingredients',
+    loadChildren: () => import('./pages/drink-ingredients/drink-ingredients.module').then( m => m.DrinkIngredientsPageModule)
   }
 ];
 @NgModule({
