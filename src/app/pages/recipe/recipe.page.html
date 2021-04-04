@@ -23,7 +23,7 @@
     <ion-list-header>
       Meals
     </ion-list-header>
-    <ion-item *ngFor="let recipe of recipes.hits" button>
+    <ion-item *ngFor="let recipe of recipes.hits" button (click)="clickRecipe(recipe.recipe)">
       <ion-avatar slot="start">
         <img [src]="recipe.recipe.image">
       </ion-avatar>

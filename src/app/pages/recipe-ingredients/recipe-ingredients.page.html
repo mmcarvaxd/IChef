@@ -1,0 +1,50 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-back-button></ion-back-button>
+    </ion-buttons>
+    <ion-title>
+      Recipe
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <ion-header collapse="condense">
+    <ion-buttons slot="start">
+      <ion-back-button></ion-back-button>
+    </ion-buttons>
+    <ion-toolbar>
+      <ion-title size="large">Recipe</ion-title>
+    </ion-toolbar>
+  </ion-header>
+  <ion-list>
+    <ion-list-header>
+      <h2>{{recipe.label}}</h2>
+    </ion-list-header>
+    <ion-avatar class="thumb-img">
+      <img [src]="recipe.image">
+    </ion-avatar>
+    <ion-item-divider>
+      <ion-label>
+        <h4>Ingredients</h4>
+      </ion-label>
+    </ion-item-divider>
+    <ion-item *ngFor="let ingredient of recipe.ingredientLines">
+      <p>{{ingredient}}</p>
+    </ion-item>
+    <ion-item-divider>
+      <ion-label>
+        <h4>Labels</h4>
+      </ion-label>
+    </ion-item-divider>
+    <ion-item>
+      <p>
+        <ion-chip *ngFor="let healthLabel of recipe.healthLabels">
+          <ion-label>{{healthLabel}}</ion-label>
+        </ion-chip>
+      </p>
+    </ion-item>
+  </ion-list>
+
+</ion-content>
