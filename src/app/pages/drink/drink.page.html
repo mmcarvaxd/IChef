@@ -1,0 +1,36 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>
+      Drinks
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <ion-header collapse="condense">
+    <ion-toolbar>
+      <ion-title size="large">Drinks</ion-title>
+    </ion-toolbar>
+  </ion-header>
+  <ion-header>
+    <ion-toolbar>
+      <ion-searchbar showCancelButton="focus" animated [debounce]="500" (ionChange)="searchChanged($event)"></ion-searchbar>
+    </ion-toolbar>
+  </ion-header>
+  
+  <ion-list>
+    <ion-list-header>
+      Drinks
+    </ion-list-header>
+    <ion-item *ngFor="let drink of drinks" button (click)="drinkClick(drink)">
+      <ion-avatar slot="start">
+        <img [src]="drink.strDrinkThumb">
+      </ion-avatar>
+      <ion-label>
+        <h2>{{drink.strDrink}}</h2>
+        <h3 style="text-transform: capitalize;">{{drink.strCategory}}</h3>
+        <p style="text-transform: capitalize;">{{drink.strAlcoholic}}</p>
+      </ion-label>
+    </ion-item>
+  </ion-list>
+</ion-content>

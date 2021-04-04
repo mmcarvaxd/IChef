@@ -1,0 +1,64 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-back-button></ion-back-button>
+    </ion-buttons>
+    <ion-title>
+      Drink
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <ion-header collapse="condense">
+    <ion-buttons slot="start">
+      <ion-back-button></ion-back-button>
+    </ion-buttons>
+    <ion-toolbar>
+      <ion-title size="large">Drink</ion-title>
+    </ion-toolbar>
+  </ion-header>
+  
+  <ion-list>
+    <ion-list-header>
+      <h2>{{drink.strDrink}}</h2>
+    </ion-list-header>
+    <ion-avatar class="thumb-img">
+      <img [src]="drink.strDrinkThumb">
+    </ion-avatar>
+    <ion-item-divider>
+      <ion-label>
+        <h4>Description</h4>
+      </ion-label>
+    </ion-item-divider>
+    <ion-item>
+      <p>{{drink.strCategory}}</p>
+    </ion-item>
+    <ion-item>
+      <p>{{drink.strAlcoholic}}</p>
+    </ion-item>
+    <ion-item>
+      <p>{{drink.strGlass}}</p>
+    </ion-item>
+    <ion-item-divider>
+      <ion-label>
+        <h4>Instructions</h4>
+      </ion-label>
+    </ion-item-divider>
+    <ion-item>
+      <p>{{drink.strInstructions}}</p>
+    </ion-item>
+    <ion-item-divider>
+      <ion-label>
+        <h4>Ingredients</h4>
+      </ion-label>
+    </ion-item-divider>
+    <div *ngFor="let index of [1,2,3,4,5,6,7,8,9,10,11,12,13,14,15]">
+      <ion-item *ngIf="drink['strIngredient' + index.toString()] || drink['strMeasure' + index.toString()]">
+        <p>{{(drink['strMeasure' + index.toString()] || "") + (drink['strIngredient' + index.toString()] || "")}}</p>
+      </ion-item>
+    </div>
+
+  </ion-list>
+
+</ion-content>
