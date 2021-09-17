@@ -1,16 +1,18 @@
-# iChef
+# 👨‍🍳IChef
+##🤔 What does IChef App do?
+IChef is an app which searchs Food and Drink Recipes and shows where to buy beverage.
 
-Aplicação de recitas de comidas.
-
-## Tecnologias usadas
-
-- Cordova
+##🖥️ Tech Stack
 - Ionic
+- Angular
+- Cordova
 
-## Imagens do APP
-![Tela de inicio](https://github.com/mmcarvaxd/IChef/blob/main/src/assets/readme/inicio.png?raw=true)
-![Tela de receitas](https://github.com/mmcarvaxd/IChef/blob/main/src/assets/readme/recipe.png?raw=true)
-![Tela de descrição das receitas](https://github.com/mmcarvaxd/IChef/blob/main/src/assets/readme/recipe-ing.png?raw=true)
-![Tela de listagem das bebidas](https://github.com/mmcarvaxd/IChef/blob/main/src/assets/readme/drink.png?raw=true)
-![Tela de descrição das bebidas](https://github.com/mmcarvaxd/IChef/blob/main/src/assets/readme/drink-ing.png?raw=true)
-![Tela de Compras de bebidas](https://github.com/mmcarvaxd/IChef/blob/main/src/assets/readme/bre.png?raw=true)
+##📱 Screenshots
+<p style="display: flex;">
+<img src="https://raw.githubusercontent.com/mmcarvaxd/IChef/main/src/assets/readme/inicio.png" alt="drawing" width="200" style="margin-right: 5px"/>
+<img src="https://raw.githubusercontent.com/mmcarvaxd/IChef/main/src/assets/readme/recipe.png" alt="drawing" width="200"/>
+</p>
+<p style="display: flex;">
+<img src="https://raw.githubusercontent.com/mmcarvaxd/IChef/main/src/assets/readme/recipe-ing.png" alt="drawing" width="200" style="margin-right: 5px"/>
+<img src="https://raw.githubusercontent.com/mmcarvaxd/IChef/main/src/assets/readme/drink.png" alt="drawing" width="200"/>
+</p>
