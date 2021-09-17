@@ -1,13 +1,13 @@
 # 👨‍🍳IChef
-##🤔 What does IChef App do?
+## 🤔 What does IChef App do?
 IChef is an app which searchs Food and Drink Recipes and shows where to buy beverage.
 
-##🖥️ Tech Stack
+## 🖥️ Tech Stack
 - Ionic
 - Angular
 - Cordova
 
-##📱 Screenshots
+## 📱 Screenshots
 <p style="display: flex;">
 <img src="https://raw.githubusercontent.com/mmcarvaxd/IChef/main/src/assets/readme/inicio.png" alt="drawing" width="200" style="margin-right: 5px"/>
 <img src="https://raw.githubusercontent.com/mmcarvaxd/IChef/main/src/assets/readme/recipe.png" alt="drawing" width="200"/>
